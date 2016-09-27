@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity_image
+id: image
+label: Image
+description: ''
+type: image
+queue_thumbnail_downloads: false
+new_revision: false
+type_configuration:
+  source_field: field_image
+  gather_exif: true
+field_map:
+  mime: field_image_mime
+  width: field_image_width
+  height: field_image_height
+  model: field_image_camera_model
+  created: field_image_date
+  iso: field_image_iso
+  exposure: field_image_exposure_time
+  aperture: field_image_aperture_value
+  focal_length: field_image_focal_length

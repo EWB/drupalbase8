@@ -1,0 +1,20 @@
+name: Postcard
+description: 'Provides Postcard content type and related configuration. Use to add postcards'
+type: module
+core: 8.x
+dependencies:
+  - asset_injector
+  - custom_add_another
+  - datetime
+  - ds
+  - field
+  - file
+  - geolocation
+  - geolocation_nominatim
+  - image
+  - menu_ui
+  - node
+  - path
+  - taxonomy
+  - text
+  - user

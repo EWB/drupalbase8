@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ny_heritage
+    - node.type.postcard
+    - taxonomy.vocabulary.new_york_heritage_topic
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: +
+    custom_remove: '-'
+id: node.postcard.field_ny_heritage
+field_name: field_ny_heritage
+entity_type: node
+bundle: postcard
+label: 'NY Heritage'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      new_york_heritage_topic: new_york_heritage_topic
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

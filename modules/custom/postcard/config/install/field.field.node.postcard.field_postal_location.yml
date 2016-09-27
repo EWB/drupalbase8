@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_postal_location
+    - node.type.postcard
+  module:
+    - custom_add_another
+    - geolocation
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: node.postcard.field_postal_location
+field_name: field_postal_location
+entity_type: node
+bundle: postcard
+label: 'Postal Location'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    lat: '44'
+    lng: '-74'
+    lat_sin: null
+    lat_cos: null
+    lng_rad: null
+    data: null
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

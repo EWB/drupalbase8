@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.postcard.field_addresse
+    - field.field.node.postcard.field_caption
+    - field.field.node.postcard.field_creator
+    - field.field.node.postcard.field_description
+    - field.field.node.postcard.field_ny_heritage
+    - field.field.node.postcard.field_physical_description
+    - field.field.node.postcard.field_postal_date
+    - field.field.node.postcard.field_postal_location
+    - field.field.node.postcard.field_postcard_image
+    - field.field.node.postcard.field_subject_location
+    - field.field.node.postcard.field_subject_topic
+    - field.field.node.postcard.field_transcript
+    - node.type.postcard
+  module:
+    - user
+id: node.postcard.teaser
+targetEntityType: node
+bundle: postcard
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_addresse: true
+  field_caption: true
+  field_creator: true
+  field_description: true
+  field_ny_heritage: true
+  field_physical_description: true
+  field_postal_date: true
+  field_postal_location: true
+  field_postcard_image: true
+  field_subject_location: true
+  field_subject_topic: true
+  field_transcript: true

@@ -1,0 +1,45 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_image
+    - field.field.media.image.field_image_aperture_value
+    - field.field.media.image.field_image_camera_model
+    - field.field.media.image.field_image_date
+    - field.field.media.image.field_image_exposure_time
+    - field.field.media.image.field_image_focal_length
+    - field.field.media.image.field_image_height
+    - field.field.media.image.field_image_iso
+    - field.field.media.image.field_image_mime
+    - field.field.media.image.field_image_width
+    - image.style.medium
+    - media_entity.bundle.image
+  module:
+    - image
+id: media.image.default
+targetEntityType: media
+bundle: image
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: above
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+hidden:
+  created: true
+  field_image_aperture_value: true
+  field_image_camera_model: true
+  field_image_date: true
+  field_image_exposure_time: true
+  field_image_focal_length: true
+  field_image_height: true
+  field_image_iso: true
+  field_image_mime: true
+  field_image_width: true
+  name: true
+  thumbnail: true
+  uid: true

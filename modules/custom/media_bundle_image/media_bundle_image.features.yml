@@ -1,0 +1,6 @@
+excluded:
+  - field.field.media.twitter_post.field_tweet_t
+  - field.field.media.twitter_post.field_tweet_url
+  - field.storage.media.field_tweet_t
+  - field.storage.media.field_tweet_url
+required: true

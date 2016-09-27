@@ -1,0 +1,149 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.postcard.field_addresse
+    - field.field.node.postcard.field_caption
+    - field.field.node.postcard.field_creator
+    - field.field.node.postcard.field_description
+    - field.field.node.postcard.field_ny_heritage
+    - field.field.node.postcard.field_physical_description
+    - field.field.node.postcard.field_postal_date
+    - field.field.node.postcard.field_postal_location
+    - field.field.node.postcard.field_postcard_image
+    - field.field.node.postcard.field_subject_location
+    - field.field.node.postcard.field_subject_topic
+    - field.field.node.postcard.field_transcript
+    - node.type.postcard
+  module:
+    - datetime
+    - ds
+    - geolocation
+    - image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      path: modules/contrib/ds
+      library: layout_plugin/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - links
+        - field_description
+        - field_creator
+        - field_ny_heritage
+        - field_caption
+        - field_postal_date
+        - field_physical_description
+        - field_addresse
+        - field_transcript
+        - field_subject_topic
+      right:
+        - field_subject_location
+        - field_postal_location
+        - field_postcard_image
+id: node.postcard.default
+targetEntityType: node
+bundle: postcard
+mode: default
+content:
+  field_addresse:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: geolocation_latlng
+  field_caption:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_creator:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_description:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_ny_heritage:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_physical_description:
+    weight: 108
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_postal_date:
+    weight: 107
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_postal_location:
+    weight: 111
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: geolocation_latlng
+  field_postcard_image:
+    weight: 113
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_subject_location:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_subject_topic:
+    weight: 112
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_transcript:
+    weight: 110
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

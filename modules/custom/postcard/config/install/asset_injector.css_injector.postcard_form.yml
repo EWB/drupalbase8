@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+id: postcard_form
+label: 'Postcard Form'
+code: ".tabledrag-toggle-weight-wrapper {\r\n    display: none;\r\n}\r\n\r\n"
+media: all
+nodeType: ''
+themes:
+  seven: seven
+  bootstrap: bootstrap
+preprocess: true
+visibility: false
+pages: ''

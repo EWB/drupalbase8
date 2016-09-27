@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'New York Heritage Topic'
+vid: new_york_heritage_topic
+description: ''
+hierarchy: 0
+weight: 0
